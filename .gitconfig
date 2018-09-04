@@ -1,0 +1,10 @@
+[user]
+  name = 
+  email = 
+[core]
+  excludesfile = ~/.gitignore_global
+  editor = vim
+[diff]
+  indentHeuristic = true
+[commit]
+  template = ~/.gitcommit_template
