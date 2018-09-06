@@ -8,3 +8,6 @@
   indentHeuristic = true
 [commit]
   template = ~/.gitcommit_template
+
+[ghq]
+  root = $GOPATH/src

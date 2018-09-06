@@ -8,3 +8,5 @@ mv ~/git-completion.bash ~/.git.bash
 mv ~/git-prompt.sh ~/.git.sh
 
 git clone https://github.com/syndbg/goenv.git ~/.goenv
+
+git clone https://github.com/riywo/anyenv ~/.anyenv
