@@ -9,7 +9,7 @@ fi
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
-PATH=$PATH:$HOME/bin:/usr/local/go/bin
+PATH=$PATH:$HOME/go/bin:/usr/local/go/bin
 
 PS1="\[\033[0m\][\u@ \W]\[\033[36m\]\$(__git_ps1)\[\033[00m\]\$ "
 
