@@ -30,7 +30,7 @@ function repo {
         popd
     fi
 }
-bind -x '"\C-r": repo'
+bind -x '"\C-p": repo'
 
 if [ -d $HOME/.anyenv ] ; then
         export PATH="$HOME/.anyenv/bin:$PATH"
