@@ -10,3 +10,5 @@ mv ~/git-prompt.sh ~/.git.sh
 git clone https://github.com/syndbg/goenv.git ~/.goenv
 
 git clone https://github.com/riywo/anyenv ~/.anyenv
+
+git clone https://github.com/tmux-plugins/tpm ~/tmux/plugins/tpm

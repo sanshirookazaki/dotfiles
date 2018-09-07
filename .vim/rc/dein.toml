@@ -31,5 +31,7 @@ repo = 'tpope/vim-fugitive'
 repo = 'powerline/fonts'
 
 [[plugins]]
-repo = 'powerline/powerline'
+repo = 'Lokaltog/vim-powerline'
 
+[[plugins]]
+repo = 'nathanaelkane/vim-indent-guides'
