@@ -17,8 +17,5 @@ set -eux
 
 for dotfile in .bash_profile .bashrc .vimrc .vim .gitconfig .gitcommit_template .gitignore_global .tmux.conf 
 do
-  if [ -e ~/$dotfile ]; then
-    rm -fr ~/$dotfile
-  fi
-  mv $PWD/$dotfile ~/$dotfile
+  cp ~/dotfiles/$dotfile ~/$dotfile
 done

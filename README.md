@@ -7,8 +7,11 @@ git clone https://github.com/vim/vim.git
 cd ~/vim
 make
 sudo make install
-sudo yum remove vim
+sudo yum remove vim -y
 exec $SHELL -l
 ```
 
-
+# setup
+```
+sh setup.sh
+```
