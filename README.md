@@ -14,4 +14,10 @@ exec $SHELL -l
 # setup
 ```
 sh setup.sh
+exec $SHELL -l
+anyenv install goenv
+goenv install 1.11.0
+goenv global 1.11.0
+goenv rehash
+go get github.com/peco/peco/cmd/peco
 ```
