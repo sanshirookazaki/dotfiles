@@ -10,4 +10,4 @@
   template = ~/.gitcommit_template
 
 [ghq]
-  root = $GOPATH/src
+  root = ~/go/src
