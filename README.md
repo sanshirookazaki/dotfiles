@@ -13,6 +13,7 @@ exec $SHELL -l
 
 # setup
 ```
+sudo cp .motd /etc/motd
 sh setup.sh
 exec $SHELL -l
 anyenv install goenv
