@@ -20,4 +20,3 @@ do
   cp ~/dotfiles/$dotfile ~/$dotfile
 done
 
-cp -r .vim/rc ~/.vim/
