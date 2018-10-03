@@ -19,3 +19,5 @@ for dotfile in .bash_profile .bashrc .vimrc .vim .gitconfig .gitcommit_template 
 do
   cp ~/dotfiles/$dotfile ~/$dotfile
 done
+
+cp -r .vim/rc ~/.vim/
