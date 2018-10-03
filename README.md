@@ -11,6 +11,13 @@ sudo yum remove vim -y
 exec $SHELL -l
 ```
 
+# Ubuntu vim version 8.x
+```
+sudo add-apt-repository ppa:jonathonf/vim
+sudo apt update
+sudo apt install vim
+```
+
 # setup
 ```
 sudo cp .motd /etc/motd
