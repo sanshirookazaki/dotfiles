@@ -15,9 +15,9 @@ git clone https://github.com/tmux-plugins/tpm ~/tmux/plugins/tpm
 
 set -eux
 
-for dotfile in .bash_profile .bashrc .vimrc .vim .gitconfig .gitcommit_template .gitignore_global .tmux.conf 
+cp -r ~/dotfiles/.vim/rc ~/.vim/rc
+
+for dotfile in .bash_profile .bashrc .vimrc .gitconfig .gitcommit_template .gitignore_global .tmux.conf 
 do
   cp ~/dotfiles/$dotfile ~/$dotfile
 done
-
-cp -r ~/dotfiles/.vim/rc ~/.vim/rc
