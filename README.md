@@ -20,11 +20,12 @@ sudo apt install vim
 
 # setup
 ```
+brew install wget
 sudo cp .motd /etc/motd
-sh setup.sh
 cp -r .vim/rc ~/.vim/
+sh setup.sh
 exec $SHELL -l
-nyenv install goenv
+anyenv install goenv
 goenv install 1.11.0
 goenv global 1.11.0
 goenv rehash
