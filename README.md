@@ -20,10 +20,13 @@ sudo apt install vim
 
 # setup
 ```
-brew install wget
+sh setup.sh
+brew install zsh
+sudo sh -c "echo '/usr/local/bin/zsh' >> /etc/shells"
+chsh -s '/usr/local/bin/zsh'
+brew install wget coreutils peco 
 sudo cp .motd /etc/motd
 cp -r .vim/rc ~/.vim/
-sh setup.sh
 exec $SHELL -l
 anyenv install goenv
 goenv install 1.11.0
