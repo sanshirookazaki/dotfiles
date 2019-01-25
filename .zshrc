@@ -86,3 +86,6 @@ zle -N peco-src
 bindkey '^P' peco-src
 zle -N peco-history-selection
 bindkey '^R' peco-history-selection
+
+# k8s 
+export KUBE_EDITOR=vim
