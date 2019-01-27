@@ -8,10 +8,13 @@ colors
 autoload -Uz compinit
 compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+zstyle ':completion:*:default' menu select=1
 setopt print_eight_bit
 setopt prompt_subst 
 setopt ignoreeof
 setopt combining_chars
+autoload -Uz add-zsh-hock
+autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
 
 # vcs
 autoload -Uz vcs_info
@@ -89,3 +92,4 @@ bindkey '^R' peco-history-selection
 
 # k8s 
 export KUBE_EDITOR=vim
+
