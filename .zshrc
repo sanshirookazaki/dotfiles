@@ -52,6 +52,7 @@ alias ls='gls --color=auto'
 alias l='ls'
 alias ll='ls -l'
 alias rm='rm -i'
+alias cat='ccat'
 
 # go
 export GOPATH=$HOME/go
