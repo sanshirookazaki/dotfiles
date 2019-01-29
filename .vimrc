@@ -36,6 +36,12 @@ let g:go_highlight_methods = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_extra_types = 1
 let g:go_highlight_build_constraints = 1
+let g:go_metalinter_autosave_enabled = ['vet', 'golint']
+let g:go_metalinter_deadline = "5s"
+let g:go_metalinter_autosave = 1
+let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['go'] }
+let g:syntastic_go_checkers = ['go', 'golint', 'errcheck']
 
 map <C-l> gt
 map <C-h> gT
