@@ -35,3 +35,6 @@ repo = 'Lokaltog/vim-powerline'
 
 [[plugins]]
 repo = 'nathanaelkane/vim-indent-guides'
+
+[[plugins]]
+repo = 'crooloose/syntastici'
