@@ -13,8 +13,6 @@ setopt print_eight_bit
 setopt prompt_subst 
 setopt ignoreeof
 setopt combining_chars
-autoload -Uz add-zsh-hock
-autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
 
 # vcs
 autoload -Uz vcs_info
@@ -40,6 +38,7 @@ HISTSIZE=6000000
 SAVEHIST=6000000
 setopt hist_ignore_dups
 setopt share_history 
+setopt inc_append_history
 
 # auto
 setopt auto_cd
@@ -52,7 +51,7 @@ alias ls='gls --color=auto'
 alias l='ls'
 alias ll='ls -l'
 alias rm='rm -i'
-alias cat='ccat'
+alias cat='ccat -G Keyword="darkred" -G Decimal="darkblue" -G Plaintext="glay" -G Punctuation="blue" -G Type="green"'
 
 # go
 export GOPATH=$HOME/go
@@ -94,3 +93,21 @@ bindkey '^R' peco-history-selection
 # k8s 
 export KUBE_EDITOR=vim
 
+if [[ -n $(echo ${^fpath}/chpwd_recent_dirs(N)) && -n $(echo ${^fpath}/cdr(N)) ]]; then
+    autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
+    add-zsh-hook chpwd chpwd_recent_dirs
+    zstyle ':completion:*' recent-dirs-insert both
+    zstyle ':chpwd:*' recent-dirs-default true
+    zstyle ':chpwd:*' recent-dirs-max 1000
+    zstyle ':chpwd:*' recent-dirs-file "$HOME/.cache/chpwd-recent-dirs"
+fi
+
+function peco-cdr () {
+    local selected_dir="$(cdr -l | sed 's/^[0-9]\+ \+//' | peco --prompt="cdr >" --query "$LBUFFER")"
+    if [ -n "$selected_dir" ]; then
+        BUFFER="cd ${selected_dir}"
+        zle accept-line
+    fi
+}
+zle -N peco-cdr
+bindkey '^X' peco-cdr
