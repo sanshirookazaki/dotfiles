@@ -29,7 +29,7 @@ precmd () {
     [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
 }    
 #add-zsh-hook precmd _update_vcs_info_msg
-PROMPT="%{${fg[green]}%}%n%{${reset_color}%}@%F{blue}localhost%f:%1(v|%F{red}%1v%f|) $ "
+PROMPT="%{${fg[green]}%}%n%{${reset_color}%}@%F{red}localhost%f:%1(v|%F{cyan}%1v%f|) $ "
 RPROMPT='[%F{green}%d%f]'
 
 # history
