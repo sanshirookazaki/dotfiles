@@ -1,9 +1,7 @@
 #!/bin/bash
 mkdir ~/.cache
 
-git clone https://github.com/syndbg/goenv.git ~/.goenv
-
-git clone https://github.com/riywo/anyenv ~/.anyenv
+git clone https://github.com/anyenv/anyenv ~/.anyenv
 
 git clone https://github.com/tmux-plugins/tpm ~/tmux/plugins/tpm
 
