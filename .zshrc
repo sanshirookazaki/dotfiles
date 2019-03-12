@@ -67,7 +67,7 @@ if [ -d $HOME/.anyenv ] ; then
 fi
 #goenv
 export GOENV_ROOT="$HOME/.goenv"
-export PATH="$GOENV_ROOT/bin:$PATH"
+export PATH="$PATH:$GOENV_ROOT/bin"
 eval "$(goenv init -)"
 
 #pect
