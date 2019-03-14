@@ -43,6 +43,10 @@ let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['go'] }
 let g:syntastic_go_checkers = ['go', 'golint', 'errcheck']
 
+autocmd FileType go setlocal noexpandtab
+autocmd FileType go setlocal tabstop=4
+autocmd FileType go setlocal shiftwidth=4
+
 map <C-l> gt
 map <C-h> gT
 
