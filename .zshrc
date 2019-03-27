@@ -92,6 +92,9 @@ bindkey '^R' peco-history-selection
 
 # k8s 
 export KUBE_EDITOR=vim
+source <(kubectl completion zsh)
+source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
+PROMPT='$(kube_ps1)'$PROMPT
 
 if [[ -n $(echo ${^fpath}/chpwd_recent_dirs(N)) && -n $(echo ${^fpath}/cdr(N)) ]]; then
     autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
