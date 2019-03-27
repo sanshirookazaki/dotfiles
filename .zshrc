@@ -92,6 +92,8 @@ bindkey '^R' peco-history-selection
 
 # k8s 
 export KUBE_EDITOR=vim
+export KUBE_PS1_CTX_COLOR=yellow
+export KUBE_PS1_NS_COLOR=magenta
 source <(kubectl completion zsh)
 source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
 PROMPT='$(kube_ps1)'$PROMPT
