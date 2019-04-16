@@ -11,3 +11,15 @@ for dotfile in .bash_profile .bashrc .zshrc .vimrc .gitconfig .gitcommit_templat
 do
   cp ~/dotfiles/$dotfile ~/$dotfile
 done
+
+# vscode
+cat ./vscode/extensions | while read line 
+do
+  code --install-extension $line
+done
+
+cd ~/Library/Application\ Support/Code/User/
+rm settings.json
+ln -s ~/dotfiles/vscode/settings.json ./settings.json
+rm keybindings.json
+ln -s ~/dotfiles/vscode/keybindings.json ./keybindings.json
