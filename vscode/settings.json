@@ -1,5 +1,8 @@
 {
     "workbench.colorTheme": "Monokai",
-    "workbench.iconTheme": "vscode-icons",
-    "files.autoSave": "afterDelay"
+    "workbench.iconTheme": "vscode-icons", 
+    "files.autoSave": "off",
+    "go.buildOnSave": "package",
+    "go.lintOnSave": "file",
+    "go.formatTool": "goimports"
 }
