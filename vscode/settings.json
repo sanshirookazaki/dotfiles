@@ -4,5 +4,7 @@
     "files.autoSave": "off",
     "go.buildOnSave": "package",
     "go.lintOnSave": "file",
-    "go.formatTool": "goimports"
+    "go.formatTool": "goimports",
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true
 }
