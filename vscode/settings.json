@@ -6,5 +6,8 @@
     "go.lintOnSave": "file",
     "go.formatTool": "goimports",
     "files.trimTrailingWhitespace": true,
-    "files.trimFinalNewlines": true
+    "files.trimFinalNewlines": true,
+    "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+    "editor.renderWhitespace": "all",
+    "editor.minimap.enabled": false
 }
