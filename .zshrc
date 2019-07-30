@@ -90,6 +90,9 @@ bindkey '^P' peco-src
 zle -N peco-history-selection
 bindkey '^R' peco-history-selection
 
+# Docker
+export DOCKER_BUILDKIT=1
+
 # k8s 
 export KUBE_EDITOR=vim
 export KUBE_PS1_CTX_COLOR=yellow
