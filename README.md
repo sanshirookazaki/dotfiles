@@ -5,7 +5,7 @@ brew install zsh
 sudo sh -c "echo '/usr/local/bin/zsh' >> /etc/shells"
 chsh -s '/usr/local/bin/zsh'
 brew tap tkengo/highway
-brew install wget coreutils peco ghq ccat highway kubernetes-cli kubectx kube-ps1 stern skaffold
+brew install wget coreutils peco ghq ccat highway kubernetes-cli kubectx kube-ps1 stern skaffold derailed/k9s/k9s
 sudo cp .motd /etc/motd
 cp -r .vim/rc ~/.vim/
 exec $SHELL -l
