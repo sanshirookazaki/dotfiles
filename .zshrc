@@ -92,6 +92,7 @@ bindkey '^R' peco-history-selection
 
 # Docker
 export DOCKER_BUILDKIT=1
+export BUILDKIT_HOST=tcp://0.0.0.0:1234
 
 # k8s 
 export KUBE_EDITOR=vim
