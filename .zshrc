@@ -120,3 +120,6 @@ function peco-cdr () {
 }
 zle -N peco-cdr
 bindkey '^X' peco-cdr
+
+# gcp
+export PATH=$PATH:$HOME/Downloads/google-cloud-sdk/bin
