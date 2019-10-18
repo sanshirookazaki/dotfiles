@@ -1,13 +1,16 @@
 {
     "workbench.colorTheme": "Monokai",
-    "workbench.iconTheme": "vscode-icons", 
+    "workbench.iconTheme": "vscode-icons",
     "files.autoSave": "off",
     "go.buildOnSave": "package",
     "go.lintOnSave": "file",
     "go.formatTool": "goimports",
     "files.trimTrailingWhitespace": true,
     "files.trimFinalNewlines": true,
-    "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
     "editor.renderWhitespace": "all",
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "phpcs.standard": "PSR2",
+    "workbench.editor.showTabs": true,
+    "workbench.editor.enablePreview": false,
+    "window.zoomLevel": 0
 }
