@@ -12,5 +12,6 @@
     "phpcs.standard": "PSR2",
     "workbench.editor.showTabs": true,
     "workbench.editor.enablePreview": false,
+    "vim.useSystemClipboard": true,
     "window.zoomLevel": 0
 }
