@@ -116,19 +116,6 @@ let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
-if &term =~ "xterm"
-    let &t_SI .= "\e[?2004h"
-    let &t_EI .= "\e[?2004l"
-    let &pastetoggle = "\e[201~"
-
-    function XTermPasteBegin(ret)
-        set paste
-        return a:ret
-    endfunction
-
-    inoremap <special> <expr> <Esc>[200~ XTermPasteBegin("")
-endif
-
 " tabstop
 set tabstop=4 shiftwidth=4
 let g:indent_guides_enable_on_vim_startup = 1
