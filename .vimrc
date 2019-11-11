@@ -51,9 +51,11 @@ map <C-l> gt
 map <C-h> gT
 
 syntax on
+" 全角スペースの背景を白に変更
+autocmd Colorscheme * highlight FullWidthSpace ctermbg=white
+autocmd VimEnter * match FullWidthSpace /　/
 colorscheme molokai
 set autoindent
-set expandtab
 set number
 set title
 set showmatch
@@ -63,12 +65,19 @@ set backspace=indent,eol,start
 set ignorecase
 set smartcase
 set wrapscan
+set hlsearch
+set incsearch
+set cursorline
+
+" NERDTree
 let NERDTreeShowHidden=1
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 map <C-n> :NERDTreeToggle<CR>
+
+" airline
 let g:airline_theme='dark'
 set statusline=2
 set ambiwidth=double
@@ -119,14 +128,37 @@ if &term =~ "xterm"
 
     inoremap <special> <expr> <Esc>[200~ XTermPasteBegin("")
 endif
-set tabstop=2 shiftwidth=2 expandtab
+
+" tabstop
+set tabstop=4 shiftwidth=4
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_guide_size = 1
 let g:indent_guides_start_level = 2
 
-let _curfile=expand("%:r")
-if _curfile == 'Makefile'
-  set noexpandtab
+" mouse
+if has('mouse')
+    set mouse=a
+    if has('mouse_sgr')
+        set ttymouse=sgr
+    elseif v:version > 703 || v:version is 703 && has('patch632')
+        set ttymouse=sgr
+    else
+        set ttymouse=xterm2
+    endif
+endif
+
+" paste
+if &term =~ "xterm"
+    let &t_SI .= "\e[?2004h"
+    let &t_EI .= "\e[?2004l"
+    let &pastetoggle = "\e[201~"
+
+    function XTermPasteBegin(ret)
+        set paste
+        return a:ret
+    endfunction
+
+    inoremap <special> <expr> <Esc>[200~ XTermPasteBegin("")
 endif
 
 " coc.nvim
