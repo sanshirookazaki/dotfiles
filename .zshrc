@@ -1,5 +1,8 @@
 # .zshrc
 
+# vim
+alias vim='/usr/local/bin/vim'
+
 # general
 export LANG=ja_JP.UTF-8
 export KCODE=u
@@ -10,7 +13,7 @@ compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*:default' menu select=1
 setopt print_eight_bit
-setopt prompt_subst 
+setopt prompt_subst
 setopt ignoreeof
 setopt combining_chars
 
@@ -20,14 +23,14 @@ autoload -Uz vcs_info
 zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' stagedstr "+"
 zstyle ':vcs_info:*' unstagedstr "*"
-zstyle ':vcs_info:*' formats '(%b%c%u)'    
-zstyle ':vcs_info:*' actionformats '(%b(%a)%c%u)'  
+zstyle ':vcs_info:*' formats '(%b%c%u)'
+zstyle ':vcs_info:*' actionformats '(%b(%a)%c%u)'
 # vcs_info call
 precmd () {
     psvar=()
     LANG=en_US.UTF-8 vcs_info
     [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
-}    
+}
 #add-zsh-hook precmd _update_vcs_info_msg
 PROMPT="%{${fg[green]}%}%n%{${reset_color}%}@%F{red}localhost%f:%1(v|%F{cyan}%1v%f|) $ "
 RPROMPT='[%F{green}%d%f]'
@@ -37,14 +40,14 @@ HISTFILE=~/.zsh_history
 HISTSIZE=6000000
 SAVEHIST=6000000
 setopt hist_ignore_dups
-setopt share_history 
+setopt share_history
 setopt inc_append_history
 
 # auto
 setopt auto_cd
 setopt auto_pushd
 setopt correct
-setopt list_packed 
+setopt list_packed
 
 # alias
 alias ls='gls --color=auto'
@@ -94,7 +97,7 @@ bindkey '^R' peco-history-selection
 export DOCKER_BUILDKIT=1
 export BUILDKIT_HOST=tcp://0.0.0.0:1234
 
-# k8s 
+# k8s
 export KUBE_EDITOR=vim
 export KUBE_PS1_CTX_COLOR=yellow
 export KUBE_PS1_NS_COLOR=magenta
