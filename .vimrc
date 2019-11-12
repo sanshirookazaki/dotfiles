@@ -19,6 +19,7 @@ if dein#load_state(s:dein_dir)
   call dein#load_toml(s:toml,      {'lazy': 0})
   call dein#load_toml(s:lazy_toml, {'lazy': 1})
 
+   call dein#recache_runtimepath()
   call dein#end()
   call dein#save_state()
 endif
@@ -54,7 +55,9 @@ syntax on
 " 全角スペースの背景を白に変更
 autocmd Colorscheme * highlight FullWidthSpace ctermbg=white
 autocmd VimEnter * match FullWidthSpace /　/
-colorscheme molokai
+colorscheme codedark "molokai
+let g:airline_theme = 'codedark'
+" let g:molokai_original = 1
 set autoindent
 set number
 set title
@@ -68,6 +71,8 @@ set wrapscan
 set hlsearch
 set incsearch
 set cursorline
+set splitbelow
+set termwinsize=8x0
 
 " NERDTree
 let NERDTreeShowHidden=1
@@ -108,19 +113,30 @@ let g:airline_symbols.spell = 'Ꞩ'
 let g:airline_symbols.notexists = '∄'
 let g:airline_symbols.whitespace = 'Ξ'
 
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-let g:airline_symbols.branch = ''
-let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = ''
-
 " tabstop
-set tabstop=4 shiftwidth=4
+set tabstop=4 shiftwidth=4 expandtab
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_guide_size = 1
 let g:indent_guides_start_level = 2
+
+" tagbar
+let g:tagbar_width = 30
+let g:tagbar_autoshowtag = 1
+
+" ale
+let g:ale_linters = {
+      \ 'php': ['phpcs', 'php']
+      \}
+
+let g:ale_php_phpcs_standard = 'PSR1,PSR2'
+
+" php-fmt
+let g:phpfmt_standard = 'PSR2'
+let g:phpfmt_autosave = 1
+
+" php_localvarcheck
+let g:php_localvarcheck_enable = 1
+let g:php_localvarcheck_global = 0
 
 " mouse
 if has('mouse')

@@ -1,4 +1,7 @@
 [[plugins]]
+repo = "vim-jp/vimdoc-ja"
+
+[[plugins]]
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
@@ -53,3 +56,36 @@ repo = "airblade/vim-gitgutter"
 
 [[plugins]]
 repo = "tpope/vim-fugitive"
+
+# [[plugins]]
+# repo = "majutsushi/tagbar"
+
+[[plugins]]
+repo = "jiangmiao/auto-pairs"
+
+[[plugins]]
+repo = "tpope/vim-surround"
+
+[[plugins]]
+repo = "yuttie/comfortable-motion.vim"
+
+[[plugins]]
+repo = "w0rp/ale"
+
+[[plugins]]
+repo="beanworks/vim-phpfmt"
+
+[[plugins]]
+repo = "flyinshadow/php_localvarcheck.vim"
+
+[[plugins]]
+repo = "tomasiser/vim-code-dark"
+
+#[[plugins]]
+#repo = "ryanoasis/vim-devicons"
+
+#[[plugins]]
+#repo = "ryanoasis/nerd-fonts"
+
+#[[plugins]]
+#repo = "sheerun/vim-polyglot"
