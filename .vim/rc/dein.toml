@@ -81,11 +81,5 @@ repo = "flyinshadow/php_localvarcheck.vim"
 [[plugins]]
 repo = "tomasiser/vim-code-dark"
 
-#[[plugins]]
-#repo = "ryanoasis/vim-devicons"
-
-#[[plugins]]
-#repo = "ryanoasis/nerd-fonts"
-
-#[[plugins]]
-#repo = "sheerun/vim-polyglot"
+[[plugins]]
+repo = "sheerun/vim-polyglot"

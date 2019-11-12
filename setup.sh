@@ -5,8 +5,6 @@ git clone https://github.com/anyenv/anyenv ~/.anyenv
 
 git clone https://github.com/tmux-plugins/tpm ~/tmux/plugins/tpm
 
-cp -r ~/dotfiles/.vim/rc ~/.vim/rc
-
 for dotfile in .bash_profile .bashrc .zshrc .vim .vimrc .gitconfig .gitcommit_template .gitignore_global .tmux.conf
 do
   if [ -e ~/$dotfile ]; then
