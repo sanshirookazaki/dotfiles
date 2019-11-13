@@ -1,7 +1,16 @@
+" undo redo persistent
+if has('persistent_undo')
+  let undo_path = expand('~/.vim/undo')
+  exe 'set undodir=' . undo_path
+  set undofile
+endif
+
+" dein
 let s:dein_dir = expand('~/.vim/dein')
 
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 
+" dein.vimがなければインストール
 if &runtimepath !~# '/dein.vim'
   if !isdirectory(s:dein_repo_dir)
     execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_dir
@@ -9,6 +18,7 @@ if &runtimepath !~# '/dein.vim'
   execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
 endif
 
+" dein.toml dein_lazy.tomlにプラグイン記述
 if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
 
@@ -19,13 +29,20 @@ if dein#load_state(s:dein_dir)
   call dein#load_toml(s:toml,      {'lazy': 0})
   call dein#load_toml(s:lazy_toml, {'lazy': 1})
 
-  " call dein#recache_runtimepath()
   call dein#end()
   call dein#save_state()
 endif
 
+" インストールされてないものがあればインストール
 if dein#check_install()
   call dein#install()
+endif
+
+" tomlから削除したプラグインを削除
+let s:removed_plugins = dein#check_clean()
+if len(s:removed_plugins) > 0
+  call map(s:removed_plugins, "delete(v:val, 'rf')")
+  call dein#recache_runtimepath()
 endif
 
 let g:go_fmt_command = "goimports"
@@ -71,8 +88,15 @@ set wrapscan
 set hlsearch
 set incsearch
 set cursorline
+" terminal
 set splitbelow
-set termwinsize=8x0
+set termwinsize=10x0
+" clipboard
+set clipboard+=unnamed
+" showtab
+" set showtabline=2
+set virtualedit=block
+set wildmenu
 
 " NERDTree
 let NERDTreeShowHidden=1
@@ -137,6 +161,11 @@ let g:phpfmt_autosave = 1
 " php_localvarcheck
 let g:php_localvarcheck_enable = 1
 let g:php_localvarcheck_global = 0
+
+" scroll
+let g:comfortable_motion_interval = 2400.0 / 60
+let g:comfortable_motion_friction = 100.0
+let g:comfortable_motion_air_drag = 3.0
 
 " mouse
 if has('mouse')

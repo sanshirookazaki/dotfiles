@@ -1,4 +1,5 @@
 # setup
+
 ```
 sh setup.sh
 sh vscode.sh
@@ -6,7 +7,7 @@ brew install zsh
 sudo sh -c "echo '/usr/local/bin/zsh' >> /etc/shells"
 chsh -s '/usr/local/bin/zsh'
 brew tap tkengo/highway skanehira/docui chmouel/tektoncd-cli
-brew install vim wget coreutils peco ghq ccat highway kubernetes-cli kubectx kube-ps1 stern skaffold derailed/k9s/k9s c-bata/kube-prompt/kube-prompt docui tektoncd-cli tfenv
+brew install vim wget coreutils peco ghq ccat highway kubernetes-cli kubectx kube-ps1 stern skaffold derailed/k9s/k9s c-bata/kube-prompt/kube-prompt docui tektoncd-cli tfenv pandoc fzf
 sudo cp .motd /etc/motd
 exec $SHELL -l
 anyenv install goenv
@@ -15,6 +16,7 @@ goenv global 1.13.0
 goenv rehash
 go get github.com/peco/peco/cmd/peco
 go get -d github.com/skanehira/docui
+git clone https://github.com/skanehira/gtran.git $HOME; cd gtran; go install
 cd $GOPATH/src/github.com/skanehira/docui
 mkdir -p $(anyenv root)/plugins
 git clone https://github.com/znz/anyenv-update.git $(anyenv root)/plugins/anyenv-update

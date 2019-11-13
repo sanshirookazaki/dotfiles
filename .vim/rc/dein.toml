@@ -83,3 +83,15 @@ repo = "tomasiser/vim-code-dark"
 
 [[plugins]]
 repo = "sheerun/vim-polyglot"
+
+[[plugins]]
+repo = "iwataka/minidown.vim"
+
+[[plugins]]
+repo = "/usr/local/opt/fzf"
+
+[[plugins]]
+repo = "junegunn/fzf.vim"
+
+[[plugins]]
+repo = "skanehira/translate.vim"
