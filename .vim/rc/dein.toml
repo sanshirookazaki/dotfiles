@@ -95,3 +95,6 @@ repo = "junegunn/fzf.vim"
 
 [[plugins]]
 repo = "skanehira/translate.vim"
+
+[[plugins]]
+repo = "vim-scripts/grep.vim"
