@@ -98,3 +98,6 @@ repo = "skanehira/translate.vim"
 
 [[plugins]]
 repo = "vim-scripts/grep.vim"
+
+[[plugins]]
+repo = "Xuyuanp/nerdtree-git-plugin"

@@ -16,9 +16,12 @@ goenv global 1.13.0
 goenv rehash
 go get github.com/peco/peco/cmd/peco
 go get -d github.com/skanehira/docui
+go get -u golang.org/x/tools/cmd/gopls
 git clone https://github.com/skanehira/gtran.git $HOME; cd gtran; go install
 cd $GOPATH/src/github.com/skanehira/docui
 mkdir -p $(anyenv root)/plugins
 git clone https://github.com/znz/anyenv-update.git $(anyenv root)/plugins/anyenv-update
 
+# coc.nvim
+vim -c 'CocInstall -sync coc-lists coc-yaml coc-json coc-phpls|q'
 ```
