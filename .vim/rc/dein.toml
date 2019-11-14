@@ -69,8 +69,8 @@ repo = "tpope/vim-surround"
 [[plugins]]
 repo = "yuttie/comfortable-motion.vim"
 
-[[plugins]]
-repo = "w0rp/ale"
+#[[plugins]]
+#repo = "w0rp/ale" -> ncoc.vim
 
 [[plugins]]
 repo="beanworks/vim-phpfmt"

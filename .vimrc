@@ -45,6 +45,7 @@ if len(s:removed_plugins) > 0
   call dein#recache_runtimepath()
 endif
 
+" vim-go
 let g:go_fmt_command = "goimports"
 let g:go_fmt_fail_silently = 1
 let g:go_highlight_types = 1
@@ -54,27 +55,30 @@ let g:go_highlight_methods = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_extra_types = 1
 let g:go_highlight_build_constraints = 1
-let g:go_metalinter_autosave_enabled = ['vet', 'golint']
-let g:go_metalinter_deadline = "5s"
-let g:go_metalinter_autosave = 1
-let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
-let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['go'] }
-let g:syntastic_go_checkers = ['go', 'golint', 'errcheck']
+"let g:go_metalinter_autosave_enabled = ['vet', 'golint']
+"let g:go_metalinter_deadline = "5s"
+"let g:go_metalinter_autosave = 1
+"let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
+"let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ['go'] }
+"let g:syntastic_go_checkers = ['go', 'golint', 'errcheck']
 
 autocmd FileType go setlocal noexpandtab
 autocmd FileType go setlocal tabstop=4
 autocmd FileType go setlocal shiftwidth=4
 
+" move tab
 map <C-l> gt
 map <C-h> gT
 
+" colorscheme
 syntax on
 " 全角スペースの背景を白に変更
 autocmd Colorscheme * highlight FullWidthSpace ctermbg=white
 autocmd VimEnter * match FullWidthSpace /　/
 colorscheme codedark "molokai
 let g:airline_theme = 'codedark'
-" let g:molokai_original = 1
+
+" general
 set autoindent
 set number
 set title
@@ -174,10 +178,10 @@ let g:indent_guides_start_level = 2
 let g:tagbar_width = 30
 let g:tagbar_autoshowtag = 1
 
-" ale
-let g:ale_linters = {
-      \ 'php': ['phpcs', 'php']
-      \}
+" ale -> coc.nvim php-ls
+"let g:ale_linters = {
+"      \ 'php': ['phpcs', 'php']
+"      \}
 
 let g:ale_php_phpcs_standard = 'PSR1,PSR2'
 
@@ -269,10 +273,10 @@ nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " Remap keys for gotos
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
+nmap <silent> df <Plug>(coc-definition)
+nmap <silent> dy <Plug>(coc-type-definition)
+nmap <silent> di <Plug>(coc-implementation)
+nmap <silent> dr <Plug>(coc-references)
 
 " Use K to show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>
