@@ -69,6 +69,7 @@ if [ -d $HOME/.anyenv ] ; then
         done
 fi
 #goenv
+export GOENV_DISABLE_GOPATH=1
 export GOENV_ROOT="$HOME/.goenv"
 export PATH="$PATH:$GOENV_ROOT/bin"
 eval "$(goenv init -)"
