@@ -65,9 +65,23 @@ autocmd FileType go setlocal noexpandtab
 autocmd FileType go setlocal tabstop=4
 autocmd FileType go setlocal shiftwidth=4
 
-" move tab
+" mappings
 map <C-l> gt
 map <C-h> gT
+nnoremap <C-h> 0
+nnoremap <C-l> $
+" space2回でカーソルの単語をハイライト
+nnoremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch<CR>
+" buf
+nnoremap <silent> <C-j> :bprev<CR>
+nnoremap <silent> <C-k> :bnext<CR>
+
+" vim-go
+noremap <C-[> :GoDef<CR>
+let mapleader = "\<Space>"
+" space s,vで分割して定義ジャンプ
+au FileType go nmap <leader>s <Plug>(go-def-split)
+au FileType go nmap <leader>v <Plug>(go-def-vertical)
 
 " colorscheme
 syntax on
@@ -76,6 +90,7 @@ autocmd Colorscheme * highlight FullWidthSpace ctermbg=white
 autocmd VimEnter * match FullWidthSpace /　/
 colorscheme codedark "molokai
 let g:airline_theme = 'codedark'
+highlight Search term=standout ctermbg=24 guibg=#264F78
 
 " general
 set autoindent
@@ -93,7 +108,7 @@ set incsearch
 set cursorline
 " terminal
 set splitbelow
-set termwinsize=10x0
+" set termwinsize=10x0
 " clipboard
 set clipboard+=unnamed
 " showtab
@@ -274,7 +289,7 @@ nmap <silent> ]g <Plug>(coc-diagnostic-next)
 " Remap keys for gotos
 nmap <silent> df <Plug>(coc-definition)
 nmap <silent> dy <Plug>(coc-type-definition)
-nmap <silent> di <Plug>(coc-implementation)
+"nmap <silent> di <Plug>(coc-implementation)
 nmap <silent> dr <Plug>(coc-references)
 
 " Use K to show documentation in preview window

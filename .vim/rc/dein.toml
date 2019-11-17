@@ -97,3 +97,12 @@ repo = "vim-scripts/grep.vim"
 
 [[plugins]]
 repo = "Xuyuanp/nerdtree-git-plugin"
+
+[[plugins]]
+repo = "osyo-manga/vim-brightest"
+
+#[[plugins]]
+#repo = "LeafCage/yankround.vim"
+#
+#[[plugins]]
+#repo = "kien/ctrlp.vim"
