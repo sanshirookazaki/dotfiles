@@ -77,7 +77,6 @@ nnoremap <silent> <C-j> :bprev<CR>
 nnoremap <silent> <C-k> :bnext<CR>
 
 " vim-go
-noremap <C-[> :GoDef<CR>
 let mapleader = "\<Space>"
 " space s,vで分割して定義ジャンプ
 au FileType go nmap <leader>s <Plug>(go-def-split)
