@@ -75,6 +75,7 @@ nnoremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearc
 " buf
 nnoremap <silent> <C-j> :bprev<CR>
 nnoremap <silent> <C-k> :bnext<CR>
+nnoremap <C-[> :GoDefPop<CR>
 
 " vim-go
 let mapleader = "\<Space>"
