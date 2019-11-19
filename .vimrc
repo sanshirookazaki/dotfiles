@@ -68,8 +68,8 @@ autocmd FileType go setlocal shiftwidth=4
 " mappings
 map <C-l> gt
 map <C-h> gT
-nnoremap <C-h> 0
-nnoremap <C-l> $
+nnoremap <C-c> 0
+nnoremap <C-v> $
 " space2回でカーソルの単語をハイライト
 nnoremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch<CR>
 " buf
@@ -90,6 +90,7 @@ autocmd VimEnter * match FullWidthSpace /　/
 colorscheme codedark "molokai
 let g:airline_theme = 'codedark'
 highlight Search term=standout ctermbg=24 guibg=#264F78
+highlight MatchParen term=reverse ctermfg=0 ctermbg=121 guifg=bg guibg=LightGreen
 
 " general
 set autoindent
