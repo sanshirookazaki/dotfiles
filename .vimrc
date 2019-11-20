@@ -68,14 +68,14 @@ autocmd FileType go setlocal shiftwidth=4
 " mappings
 map <C-l> gt
 map <C-h> gT
-nnoremap <C-c> 0
-nnoremap <C-v> $
+nnoremap <C-a> 0
+nnoremap <C-s> $
 " space2回でカーソルの単語をハイライト
 nnoremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch<CR>
 " buf
 nnoremap <silent> <C-j> :bprev<CR>
 nnoremap <silent> <C-k> :bnext<CR>
-nnoremap <C-[> :GoDefPop<CR>
+nnoremap <C-[> <Plug>(go-def-pop)
 
 " vim-go
 let mapleader = "\<Space>"
