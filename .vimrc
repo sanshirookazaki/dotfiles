@@ -71,11 +71,11 @@ map <C-h> gT
 nnoremap <C-a> 0
 nnoremap <C-s> $
 " space2回でカーソルの単語をハイライト
-nnoremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch<CR>
+ nnoremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch<CR>
 " buf
 nnoremap <silent> <C-j> :bprev<CR>
 nnoremap <silent> <C-k> :bnext<CR>
-nnoremap <C-[> <Plug>(go-def-pop)
+" map <C-[> <Plug>(go-def-pop)
 
 " vim-go
 let mapleader = "\<Space>"
@@ -116,6 +116,8 @@ set clipboard+=unnamed
 " set showtabline=2
 set virtualedit=block
 set wildmenu
+" 矢印キー有効
+set nocompatible
 
 " grep
 set grepprg=hw\ --no-group\ --no-color
