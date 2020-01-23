@@ -89,7 +89,7 @@ syntax on
 autocmd Colorscheme * highlight FullWidthSpace ctermbg=white
 autocmd VimEnter * match FullWidthSpace /　/
 colorscheme codedark "molokai
-let g:airline_theme = 'codedark'
+" let g:airline_theme = 'codedark'
 highlight Search term=standout ctermbg=24 guibg=#264F78
 highlight MatchParen term=reverse ctermfg=0 ctermbg=121 guifg=bg guibg=LightGreen
 
@@ -307,7 +307,7 @@ function! s:show_documentation()
 endfunction
 
 " Highlight symbol under cursor on CursorHold
-autocmd CursorHold * silent call CocActionAsync('highlight')
+" autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Remap for rename current word
 nmap <leader>rn <Plug>(coc-rename)
