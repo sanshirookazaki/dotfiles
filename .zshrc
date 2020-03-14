@@ -51,6 +51,7 @@ setopt list_packed
 
 # alias
 alias ls='gls --color=auto'
+alias lg='lazygit'
 alias l='ls'
 alias ll='ls -l'
 alias rm='rm -i'
