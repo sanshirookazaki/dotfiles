@@ -7,7 +7,7 @@ brew install zsh
 sudo sh -c "echo '/usr/local/bin/zsh' >> /etc/shells"
 chsh -s '/usr/local/bin/zsh'
 brew tap tkengo/highway skanehira/docui chmouel/tektoncd-cli cjbassi/gotop
-brew install vim wget coreutils peco ghq ccat highway kubernetes-cli kubectx kube-ps1 stern skaffold derailed/k9s/k9s c-bata/kube-prompt/kube-prompt docui tektoncd-cli tfenv pandoc fzf lazygit gotop
+brew install vim wget coreutils peco ghq ccat highway kubernetes-cli kubectx kube-ps1 stern skaffold derailed/k9s/k9s c-bata/kube-prompt/kube-prompt docui tektoncd-cli tfenv pandoc fzf lazygit gotop highlight
 sudo cp .motd /etc/motd
 exec $SHELL -l
 anyenv install goenv
