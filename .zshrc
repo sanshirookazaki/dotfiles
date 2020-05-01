@@ -131,3 +131,8 @@ export PATH=$PATH:$HOME/Downloads/google-cloud-sdk/bin
 
 # direnv
 eval "$(direnv hook zsh)"
+
+# fzf
+export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border --inline-info'
+alias f='find ./* -type f | fzf --preview "head -100 {}"'
+alias vimf='vim $(f)'
