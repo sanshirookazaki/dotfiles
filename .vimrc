@@ -114,6 +114,8 @@ set splitbelow
 set clipboard+=unnamed
 " showtab
 " set showtabline=2
+set list listchars=tab:»-
+
 set virtualedit=block
 set wildmenu
 " 矢印キー有効
@@ -186,7 +188,7 @@ highlight GitGutterDelete ctermfg=1
 highlight GitGutterChangeDelete ctermfg=4
 
 " tabstop
-set tabstop=4 shiftwidth=4 expandtab
+set tabstop=4 shiftwidth=2 expandtab
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_guide_size = 1
 let g:indent_guides_start_level = 2
