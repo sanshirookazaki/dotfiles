@@ -68,8 +68,10 @@ autocmd FileType go setlocal shiftwidth=4
 " mappings
 map <C-l> gt
 map <C-h> gT
+" line head
 nnoremap <C-a> 0
-nnoremap <C-s> $
+" line tail
+nnoremap <C-e> $
 " space2回でカーソルの単語をハイライト
  nnoremap <silent> <Space><Space> "zyiw:let @/ = '\<' . @z . '\>'<CR>:set hlsearch<CR>
 " buf
@@ -114,7 +116,7 @@ set splitbelow
 set clipboard+=unnamed
 " showtab
 " set showtabline=2
-set list listchars=tab:»-
+" set list listchars=tab:»-
 
 set virtualedit=block
 set wildmenu
