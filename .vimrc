@@ -90,7 +90,8 @@ syntax on
 " 全角スペースの背景を白に変更
 autocmd Colorscheme * highlight FullWidthSpace ctermbg=white
 autocmd VimEnter * match FullWidthSpace /　/
-colorscheme codedark "molokai
+autocmd ColorScheme * highlight LineNr ctermfg=61 ctermbg=235
+colorscheme iceberg
 " let g:airline_theme = 'codedark'
 highlight Search term=standout ctermbg=24 guibg=#264F78
 highlight MatchParen term=reverse ctermfg=0 ctermbg=121 guifg=bg guibg=LightGreen
@@ -116,7 +117,7 @@ set splitbelow
 set clipboard+=unnamed
 " showtab
 " set showtabline=2
-" set list listchars=tab:»-
+" set list listchars=tab:▸
 
 set virtualedit=block
 set wildmenu
