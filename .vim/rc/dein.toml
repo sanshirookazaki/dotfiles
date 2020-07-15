@@ -90,6 +90,12 @@ repo = "/usr/local/opt/fzf"
 repo = "junegunn/fzf.vim"
 
 [[plugins]]
+repo = "junegunn/fzf"
+
+[[plugins]]
+repo = "antoinemadec/coc-fzf"
+
+[[plugins]]
 repo = "skanehira/translate.vim"
 
 [[plugins]]
@@ -109,3 +115,6 @@ repo = "osyo-manga/vim-brightest"
 
 [[plugins]]
 repo = "cocopon/iceberg.vim"
+
+[[plugins]]
+repo = "easymotion/vim-easymotion"
