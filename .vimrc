@@ -200,11 +200,6 @@ let g:indent_guides_start_level = 2
 let g:tagbar_width = 30
 let g:tagbar_autoshowtag = 1
 
-" ale -> coc.nvim php-ls
-"let g:ale_linters = {
-"      \ 'php': ['phpcs', 'php']
-"      \}
-
 let g:ale_php_phpcs_standard = 'PSR1,PSR2'
 
 " php-fmt
