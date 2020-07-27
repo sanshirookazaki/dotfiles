@@ -6,5 +6,8 @@
         "filetypes": ["go"]
         }
     },
+    "yaml.schemas": {
+      "kubernetes": "/*.yaml"
+    },
     "coc.preferences.jumpCommand": "tab drop"
 }
