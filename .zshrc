@@ -142,4 +142,4 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # podman
 eval $(podman-machine env box --varlink)
-alias pod='podman-remote'
+alias pd='podman-remote'
