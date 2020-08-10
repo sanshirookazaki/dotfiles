@@ -29,4 +29,7 @@ curl -O https://raw.githubusercontent.com/Arc0re/Iceberg-iTerm2/master/iceberg.i
 
 # coc.nvim
 vim -c 'CocInstall -sync coc-lists coc-yaml coc-json coc-phpls|q'
+
+# podman
+https://github.com/boot2podman/machine
 ```
