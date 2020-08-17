@@ -1,9 +1,5 @@
 " undo redo persistent
-if has('persistent_undo')
-  let undo_path = expand('~/.vim/undo')
-  exe 'set undodir=' . undo_path
-  set undofile
-endif
+set undofile
 
 " dein
 let s:dein_dir = expand('~/.vim/dein')
