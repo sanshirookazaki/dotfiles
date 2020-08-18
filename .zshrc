@@ -141,5 +141,4 @@ alias vimf='vim $(f)'
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # podman
-eval $(podman-machine env box --varlink)
-alias pd='podman-remote'
+alias podman='podman --url "$CONTAINER_HOST"'
