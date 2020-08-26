@@ -139,6 +139,3 @@ alias vimf='vim $(f)'
 
 # zsh-syntax-highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# podman
-alias podman='podman --url "$CONTAINER_HOST"'
