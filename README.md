@@ -12,10 +12,6 @@ brew bundle --global
 
 sudo cp .motd /etc/motd
 exec $SHELL -l
-anyenv install goenv
-goenv install 1.13.0
-goenv global 1.13.0
-goenv rehash
 mkdir -p $(anyenv root)/plugins
 git clone https://github.com/znz/anyenv-update.git $(anyenv root)/plugins/anyenv-update
 curl -O https://raw.githubusercontent.com/Arc0re/Iceberg-iTerm2/master/iceberg.itermcolors
