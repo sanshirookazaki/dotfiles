@@ -81,9 +81,6 @@ repo = "sheerun/vim-polyglot"
 repo = "iwataka/minidown.vim"
 
 [[plugins]]
-repo = "/usr/local/opt/fzf"
-
-[[plugins]]
 repo = "junegunn/fzf.vim"
 
 [[plugins]]
@@ -91,9 +88,6 @@ repo = "junegunn/fzf"
 
 [[plugins]]
 repo = "antoinemadec/coc-fzf"
-
-[[plugins]]
-repo = "skanehira/translate.vim"
 
 [[plugins]]
 repo = "vim-scripts/grep.vim"
@@ -104,11 +98,11 @@ repo = "Xuyuanp/nerdtree-git-plugin"
 [[plugins]]
 repo = "osyo-manga/vim-brightest"
 
-#[[plugins]]
-#repo = "LeafCage/yankround.vim"
+# [[plugins]]
+# repo = "LeafCage/yankround.vim"
 #
-#[[plugins]]
-#repo = "kien/ctrlp.vim"
+# [[plugins]]
+# repo = "kien/ctrlp.vim"
 
 [[plugins]]
 repo = "cocopon/iceberg.vim"
