@@ -87,6 +87,7 @@ syntax on
 autocmd Colorscheme * highlight FullWidthSpace ctermbg=white
 autocmd VimEnter * match FullWidthSpace /　/
 autocmd ColorScheme * highlight LineNr ctermfg=61 ctermbg=235
+set termguicolors
 colorscheme iceberg
 " let g:airline_theme = 'codedark'
 highlight Search term=standout ctermbg=24 guibg=#264F78
