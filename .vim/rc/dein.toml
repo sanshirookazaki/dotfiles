@@ -54,9 +54,6 @@ repo = "airblade/vim-gitgutter"
 repo = "tpope/vim-fugitive"
 
 # [[plugins]]
-# repo = "majutsushi/tagbar"
-
-# [[plugins]]
 # repo = "jiangmiao/auto-pairs"
 
 [[plugins]]
