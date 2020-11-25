@@ -128,6 +128,7 @@ bindkey '^X' peco-cdr
 
 # gcp
 export PATH=$PATH:$HOME/Downloads/google-cloud-sdk/bin
+export GOOGLE_APPLICATION_CREDENTIALS=`find $HOME/.gcp -name "*.json"`
 
 # direnv
 eval "$(direnv hook zsh)"
