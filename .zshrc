@@ -58,7 +58,7 @@ alias rm='rm -i'
 alias cat='ccat -G Keyword="darkred" -G Decimal="darkblue" -G Plaintext="glay" -G Punctuation="blue" -G Type="green"'
 
 # go
-export GOPATH=$HOME/go
+export GOPATH=$HOME/go:$HOME/.ghq
 PATH=$PATH:$HOME/go/bin:/usr/local/go/bin
 # anyenv
 if [ -d $HOME/.anyenv ] ; then
@@ -74,6 +74,8 @@ export GOENV_DISABLE_GOPATH=1
 export GOENV_ROOT="$HOME/.goenv"
 export PATH="$PATH:$GOENV_ROOT/bin"
 eval "$(goenv init -)"
+
+eval "$(pyenv init -)"
 
 #pect
 function peco-history-selection() {
