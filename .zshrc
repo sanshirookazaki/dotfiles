@@ -145,3 +145,6 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # datastore
 export DATASTORE_EMULATOR_HOST=localhost:8081
+
+# vim-sclow
+set updatetime=100
