@@ -63,6 +63,10 @@ autocmd FileType go setlocal noexpandtab
 autocmd FileType go setlocal tabstop=4
 autocmd FileType go setlocal shiftwidth=4
 
+" any-jump
+let g:any_jump_list_numbers = 1
+nnoremap <C-s> :AnyJump<CR>
+
 " mappings
 map <C-l> gt
 map <C-h> gT
