@@ -64,6 +64,7 @@ brew "stern"
 brew "telnet"
 brew "terraform", link: false
 brew "tfenv", link: false
+brew "the_silver_searcher"
 brew "tig"
 brew "tmux"
 brew "tree"
