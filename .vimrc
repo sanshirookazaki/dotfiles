@@ -94,6 +94,11 @@ autocmd Colorscheme * highlight FullWidthSpace ctermbg=white
 autocmd VimEnter * match FullWidthSpace /　/
 autocmd ColorScheme * highlight LineNr ctermfg=61 ctermbg=235
 set termguicolors
+
+" true color for tmux
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
 colorscheme iceberg
 " let g:airline_theme = 'codedark'
 highlight Search term=standout ctermbg=24 guibg=#264F78
