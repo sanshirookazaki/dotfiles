@@ -1,7 +1,11 @@
 " undo redo persistent
-set directory=~/.vim/tmp
-set backupdir=~/.vim/tmp
-set undodir=~/.vim/tmp
+if has('persistent_undo')
+  set undodir=~/.vim/tmp
+  set undofile
+endif
+
+set noswapfile
+set nobackup
 
 " dein
 let s:dein_dir = expand('~/.vim/dein')
