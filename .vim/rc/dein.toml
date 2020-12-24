@@ -77,14 +77,14 @@ repo = "sheerun/vim-polyglot"
 [[plugins]]
 repo = "iwataka/minidown.vim"
 
-[[plugins]]
-repo = "junegunn/fzf.vim"
+# [[plugins]]
+# repo = "junegunn/fzf.vim"
 
 [[plugins]]
 repo = "junegunn/fzf"
 
-[[plugins]]
-repo = "antoinemadec/coc-fzf"
+# [[plugins]]
+# repo = "antoinemadec/coc-fzf"
 
 [[plugins]]
 repo = "vim-scripts/grep.vim"
