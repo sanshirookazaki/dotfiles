@@ -1,6 +1,6 @@
 [user]
-  name = sanshirookazaki
-  email = sanshirookazaki@gmail.com
+  name =
+  email =
 [core]
   excludesfile = ~/.gitignore_global
   editor = vim
