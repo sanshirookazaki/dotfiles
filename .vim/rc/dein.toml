@@ -10,9 +10,9 @@ repo = 'Shougo/unite.vim'
 [[plugins]]
 repo = 'tomasr/molokai'
 
-[[plugins]]
-repo = 'fatih/vim-go'
-on_ft = 'go'
+# [[plugins]]
+# repo = 'fatih/vim-go'
+# on_ft = 'go'
 
 [[plugins]]
 repo = 'scrooloose/nerdtree'
@@ -49,9 +49,6 @@ merged = '0'
 
 [[plugins]]
 repo = "airblade/vim-gitgutter"
-
-[[plugins]]
-repo = "tpope/vim-fugitive"
 
 # [[plugins]]
 # repo = "jiangmiao/auto-pairs"
@@ -112,3 +109,6 @@ repo = "tpope/vim-commentary"
 
 [[plugins]]
 repo = "pechorin/any-jump.vim"
+
+[[plugins]]
+repo = "mattn/vim-goimports"
