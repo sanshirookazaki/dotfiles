@@ -4,7 +4,7 @@ if has('persistent_undo')
   set undofile
 endif
 
-set noswapfile
+" set noswapfile
 set nobackup
 
 " dein
