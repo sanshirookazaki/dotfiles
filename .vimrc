@@ -378,3 +378,7 @@ map <Leader> <Plug>(easymotion-prefix)
 let g:EasyMotion_smartcase = 1
 map  <Leader>w <Plug>(easymotion-bd-w)
 nmap <Leader>w <Plug>(easymotion-overwin-w)
+
+" chrisbra/csv.vim in vim-polyglot
+let g:csv_highlight_column = 'y'
+let g:csv_hiHeader = 'Pmenu'

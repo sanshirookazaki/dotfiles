@@ -7,8 +7,8 @@ repo = 'Shougo/dein.vim'
 [[plugins]]
 repo = 'Shougo/unite.vim'
 
-[[plugins]]
-repo = 'tomasr/molokai'
+# [[plugins]]
+# repo = 'tomasr/molokai'
 
 # [[plugins]]
 # repo = 'fatih/vim-go'
@@ -65,8 +65,8 @@ repo="beanworks/vim-phpfmt"
 [[plugins]]
 repo = "flyinshadow/php_localvarcheck.vim"
 
-[[plugins]]
-repo = "tomasiser/vim-code-dark"
+# [[plugins]]
+# repo = "tomasiser/vim-code-dark"
 
 [[plugins]]
 repo = "sheerun/vim-polyglot"
@@ -112,3 +112,6 @@ repo = "pechorin/any-jump.vim"
 
 [[plugins]]
 repo = "mattn/vim-goimports"
+
+[[plugins]]
+repo = "mechatroner/rainbow_csv"
