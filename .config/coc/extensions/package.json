@@ -1,9 +1,0 @@
-{
-  "dependencies": {
-    "coc-json": ">=1.2.6",
-    "coc-lists": ">=1.3.16",
-    "coc-phpls": ">=2.1.10",
-    "coc-prettier": ">=1.1.20",
-    "coc-yaml": ">=1.1.0"
-  }
-}

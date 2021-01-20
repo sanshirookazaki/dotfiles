@@ -1,7 +1,7 @@
 #!/bin/bash
 mkdir -p  ~/.cache
 
-for dotfile in .bash_profile .bashrc .zshrc .vim .vimrc .gitcommit_template .gitignore_global .tmux.conf .config/coc/extensions/package.json
+for dotfile in .bash_profile .bashrc .zshrc .vim .vimrc .gitcommit_template .gitignore_global .tmux.conf
 do
   if [ -e ~/$dotfile ]; then
     rm -fr ~/$dotfile

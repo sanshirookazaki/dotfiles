@@ -115,3 +115,40 @@ repo = "mattn/vim-goimports"
 
 [[plugins]]
 repo = "mechatroner/rainbow_csv"
+
+# coc extension
+[[plugins]]
+repo = "neoclide/coc-lists"
+build = 'yarn install --frozen-lockfile'
+
+[[plugins]]
+repo = "neoclide/coc-json"
+build = 'yarn install --frozen-lockfile'
+
+[[plugins]]
+repo = "neoclide/coc-eslint"
+build = 'yarn install --frozen-lockfile'
+
+[[plugins]]
+repo = "neoclide/coc-html"
+build = 'yarn install --frozen-lockfile'
+
+[[plugins]]
+repo = "neoclide/coc-css"
+build = 'yarn install --frozen-lockfile'
+
+[[plugins]]
+repo = "marlonfan/coc-phpls"
+build = 'yarn install --frozen-lockfile'
+
+[[plugins]]
+repo = "neoclide/coc-yaml"
+build = 'yarn install --frozen-lockfile'
+
+[[plugins]]
+repo = "neoclide/coc-prettier"
+build = 'yarn install --frozen-lockfile'
+
+[[plugins]]
+repo = "fannheyward/coc-markdownlint"
+build = 'yarn install --frozen-lockfile'
