@@ -152,3 +152,7 @@ build = 'yarn install --frozen-lockfile'
 [[plugins]]
 repo = "fannheyward/coc-markdownlint"
 build = 'yarn install --frozen-lockfile'
+
+[[plugins]]
+repo = "josa42/coc-go"
+build = 'yarn install --frozen-lockfile'
