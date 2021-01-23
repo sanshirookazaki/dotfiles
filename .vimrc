@@ -382,3 +382,9 @@ nmap <Leader>w <Plug>(easymotion-overwin-w)
 " chrisbra/csv.vim in vim-polyglot
 let g:csv_highlight_column = 'y'
 let g:csv_hiHeader = 'Pmenu'
+
+" vim-better-whitespace
+let g:strip_whitespace_on_save = 1
+let g:strip_whitespace_confirm = 0
+let g:strip_only_modified_lines = 1
+let g:better_whitespace_guicolor = "pink"

@@ -39,13 +39,13 @@ repo = 'nathanaelkane/vim-indent-guides'
 repo = 'scrooloose/syntastic'
 
 [[plugins]]
-repo = 'raviqqe/vim-non-blank'
+repo = "ntpeters/vim-better-whitespace"
 
 [[plugins]]
-repo = 'neoclide/coc.nvim'
-rev = 'release'
-on_i = 1
-merged = '0'
+repo = "neoclide/coc.nvim"
+rev = "release"
+build = "yarn install --frozen-lockfile"
+merged = "0"
 
 [[plugins]]
 repo = "airblade/vim-gitgutter"
@@ -70,6 +70,7 @@ repo = "flyinshadow/php_localvarcheck.vim"
 
 [[plugins]]
 repo = "sheerun/vim-polyglot"
+merged = "0"
 
 [[plugins]]
 repo = "iwataka/minidown.vim"
