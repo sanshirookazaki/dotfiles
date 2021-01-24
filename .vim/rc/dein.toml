@@ -70,7 +70,7 @@ repo = "flyinshadow/php_localvarcheck.vim"
 
 [[plugins]]
 repo = "sheerun/vim-polyglot"
-merged = "0"
+ merged = "0"
 
 [[plugins]]
 repo = "iwataka/minidown.vim"
@@ -117,7 +117,12 @@ repo = "mattn/vim-goimports"
 [[plugins]]
 repo = "mechatroner/rainbow_csv"
 
-# coc extension
+[[plugins]]
+repo = "jistr/vim-nerdtree-tabs"
+
+#
+# coc extensions
+#
 [[plugins]]
 repo = "neoclide/coc-lists"
 build = 'yarn install --frozen-lockfile'
@@ -152,8 +157,4 @@ build = 'yarn install --frozen-lockfile'
 
 [[plugins]]
 repo = "fannheyward/coc-markdownlint"
-build = 'yarn install --frozen-lockfile'
-
-[[plugins]]
-repo = "josa42/coc-go"
 build = 'yarn install --frozen-lockfile'

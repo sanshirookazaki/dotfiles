@@ -5,7 +5,7 @@ if has('persistent_undo')
 endif
 
 " set noswapfile
-set nobackup
+" set nobackup
 
 " dein
 let s:dein_dir = expand('~/.vim/dein')
@@ -132,7 +132,7 @@ let NERDTreeShowHidden=1
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
-map <C-n> :NERDTreeToggle<CR>
+map <C-n> :NERDTreeTabsToggle<CR>
 
 " nerdtree-git-plugin
 let g:NERDTreeGitStatusIndicatorMapCustom = {
