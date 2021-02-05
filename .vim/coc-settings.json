@@ -13,8 +13,11 @@
             }
         }
     },
-    // "yaml.schemas": {
-    //   "kubernetes": "/*.yaml"
-    // },
-    // "coc.preferences.jumpCommand": "tab drop"
+    "coc.preferences.formatOnSaveFiletypes": [
+        "css",
+        "typescript",
+        "javascript",
+        "markdown",
+        "json"
+    ]
 }

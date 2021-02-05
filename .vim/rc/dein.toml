@@ -120,6 +120,9 @@ repo = "mechatroner/rainbow_csv"
 [[plugins]]
 repo = "jistr/vim-nerdtree-tabs"
 
+[[plugins]]
+repo = "ghifarit53/tokyonight-vim"
+
 #
 # coc extensions
 #
@@ -157,4 +160,8 @@ build = 'yarn install --frozen-lockfile'
 
 [[plugins]]
 repo = "fannheyward/coc-markdownlint"
+build = 'yarn install --frozen-lockfile'
+
+[[plugins]]
+repo = "neoclide/coc-tsserver"
 build = 'yarn install --frozen-lockfile'
