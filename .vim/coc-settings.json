@@ -25,6 +25,7 @@
   "coc.preferences.extensionUpdateCheck": "daily",
   "coc.preferences.formatOnType": true,
   "coc.preferences.formatOnSaveFiletypes": [
+    "html",
     "css",
     "typescript",
     "javascript",
