@@ -50,10 +50,10 @@ setopt correct
 setopt list_packed
 
 # alias
-alias ls='gls --color=auto'
+alias ls='lsd'
 alias lg='lazygit'
-alias l='ls'
-alias ll='logo-ls -l'
+alias l='lsd -l'
+alias ll='lsd -al'
 alias rm='rm -i'
 alias cat='ccat -G Keyword="darkred" -G Decimal="darkblue" -G Plaintext="glay" -G Punctuation="blue" -G Type="green"'
 

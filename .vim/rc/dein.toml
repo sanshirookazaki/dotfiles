@@ -123,6 +123,9 @@ repo = "jistr/vim-nerdtree-tabs"
 [[plugins]]
 repo = "ghifarit53/tokyonight-vim"
 
+[[plugins]]
+repo = "ConradIrwin/vim-bracketed-paste"
+
 #
 # coc extensions
 #

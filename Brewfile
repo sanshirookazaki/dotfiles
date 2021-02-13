@@ -51,6 +51,7 @@ brew "kube-ps1"
 brew "kubectx"
 brew "kustomize"
 brew "lazygit"
+brew "lsd"
 brew "lsof", link: true
 brew "minikube"
 brew "pandoc"
