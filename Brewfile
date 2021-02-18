@@ -72,6 +72,7 @@ brew "terraform", link: false
 brew "tfenv", link: false
 brew "the_silver_searcher"
 brew "tig"
+brew "tldr"
 brew "tmux"
 brew "tree"
 brew "vegeta"
