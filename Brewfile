@@ -55,6 +55,7 @@ brew "lazygit"
 brew "lsd"
 brew "lsof", link: true
 brew "minikube"
+brew "navi"
 brew "pandoc"
 brew "peco"
 brew "podman"
