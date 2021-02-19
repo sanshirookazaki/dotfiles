@@ -148,3 +148,6 @@ export DATASTORE_EMULATOR_HOST=localhost:8081
 
 # vim-sclow
 set updatetime=100
+
+# navi
+eval "$(navi widget zsh)"
