@@ -31,7 +31,9 @@
     "javascript",
     "markdown",
     "json",
-    "jsonc"
+    "jsonc",
+    "yaml",
+    "yml"
   ],
   "eslint.autoFixOnSave": true
 }
