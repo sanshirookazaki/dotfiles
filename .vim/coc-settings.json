@@ -28,12 +28,16 @@
     "html",
     "css",
     "typescript",
+    "typescriptreact",
     "javascript",
+    "javascriptreact",
     "markdown",
     "json",
     "jsonc",
-    "yaml",
-    "yml"
+    "yaml"
   ],
-  "eslint.autoFixOnSave": true
+  "eslint.autoFixOnSave": true,
+  "prettier.eslintIntegration": true,
+  "yaml.format.enable": true,
+  "yaml.trace.server": "verbose"
 }
