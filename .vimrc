@@ -242,6 +242,10 @@ endif
 " coc.nvim
 "
 "
+let g:coc_filetype_map = {
+  \ 'typescript': 'typescriptreact',
+  \ 'javascript': 'javascriptreact',
+  \ }
 " if hidden is not set, TextEdit might fail.
 set hidden
 
