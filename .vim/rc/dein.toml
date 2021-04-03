@@ -126,6 +126,9 @@ repo = "ghifarit53/tokyonight-vim"
 [[plugins]]
 repo = "ConradIrwin/vim-bracketed-paste"
 
+[[plugins]]
+repo = "ryanoasis/vim-devicons"
+
 #
 # coc extensions
 #
