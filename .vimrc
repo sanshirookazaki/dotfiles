@@ -252,7 +252,7 @@ set updatetime=1000
 set signcolumn=yes
 
 " Remap keys for gotos
-nmap <silent> df <Plug>(coc-definition)
+nmap <silent> <C-]> <Plug>(coc-definition)
 nmap <silent> dy <Plug>(coc-type-definition)
 "nmap <silent> di <Plug>(coc-implementation)
 nmap <silent> dr <Plug>(coc-references)
