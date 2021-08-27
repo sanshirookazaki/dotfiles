@@ -1,0 +1,24 @@
+[gcloud]
+format = 'on [$symbol$project|$region]($style) '
+[gcloud.region_aliases]
+us-central1 = "us-c1"
+asia-northeast1 = "asia-n1"
+
+[php]
+format = ""
+
+[nodejs]
+format = ""
+
+[python]
+format = ""
+
+[docker_context]
+format = ""
+
+[golang]
+format = "[Go $version](bold cyan) "
+
+[env_var.ENV]
+format = "ENV=[$env_value](bold red) "
+

@@ -33,7 +33,7 @@ precmd () {
 }
 #add-zsh-hook precmd _update_vcs_info_msg
 PROMPT="%{${fg[green]}%}%n%{${reset_color}%}@%F{red}localhost%f:%1(v|%F{cyan}%1v%f|) $ "
-RPROMPT='[%F{green}%d%f]'
+# RPROMPT='[%F{green}%d%f]'
 
 # history
 HISTFILE=~/.zsh_history
