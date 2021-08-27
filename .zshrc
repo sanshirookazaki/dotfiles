@@ -155,3 +155,5 @@ eval "$(navi widget zsh)"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 eval "$(jump shell)"
+
+eval "$(starship init zsh)"
