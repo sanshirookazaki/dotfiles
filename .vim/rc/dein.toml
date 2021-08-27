@@ -23,8 +23,8 @@ repo = 'vim-airline/vim-airline'
 [[plugins]]
 repo = 'vim-airline/vim-airline-themes'
 
-[[plugins]]
-repo = 'tpope/vim-fugitive'
+# [[plugins]]
+# repo = 'tpope/vim-fugitive'
 
 [[plugins]]
 repo = 'powerline/fonts'
@@ -43,9 +43,9 @@ repo = "ntpeters/vim-better-whitespace"
 
 [[plugins]]
 repo = "neoclide/coc.nvim"
-rev = "release"
+rev = "master"
 build = "yarn install --frozen-lockfile"
-merged = "0"
+# merged = "0"
 
 [[plugins]]
 repo = "airblade/vim-gitgutter"
