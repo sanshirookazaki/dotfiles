@@ -7,13 +7,6 @@ repo = 'Shougo/dein.vim'
 [[plugins]]
 repo = 'Shougo/unite.vim'
 
-# [[plugins]]
-# repo = 'tomasr/molokai'
-
-# [[plugins]]
-# repo = 'fatih/vim-go'
-# on_ft = 'go'
-
 [[plugins]]
 repo = 'scrooloose/nerdtree'
 
@@ -22,15 +15,6 @@ repo = 'vim-airline/vim-airline'
 
 [[plugins]]
 repo = 'vim-airline/vim-airline-themes'
-
-# [[plugins]]
-# repo = 'tpope/vim-fugitive'
-
-[[plugins]]
-repo = 'powerline/fonts'
-
-[[plugins]]
-repo = 'Lokaltog/vim-powerline'
 
 [[plugins]]
 repo = 'nathanaelkane/vim-indent-guides'
@@ -42,16 +26,7 @@ repo = 'scrooloose/syntastic'
 repo = "ntpeters/vim-better-whitespace"
 
 [[plugins]]
-repo = "neoclide/coc.nvim"
-rev = "master"
-build = "yarn install --frozen-lockfile"
-# merged = "0"
-
-[[plugins]]
 repo = "airblade/vim-gitgutter"
-
-# [[plugins]]
-# repo = "jiangmiao/auto-pairs"
 
 [[plugins]]
 repo = "tpope/vim-surround"
@@ -60,29 +35,11 @@ repo = "tpope/vim-surround"
 repo = "yuttie/comfortable-motion.vim"
 
 [[plugins]]
-repo="beanworks/vim-phpfmt"
-
-[[plugins]]
-repo = "flyinshadow/php_localvarcheck.vim"
-
-# [[plugins]]
-# repo = "tomasiser/vim-code-dark"
-
-[[plugins]]
 repo = "sheerun/vim-polyglot"
  merged = "0"
 
 [[plugins]]
-repo = "iwataka/minidown.vim"
-
-# [[plugins]]
-# repo = "junegunn/fzf.vim"
-
-[[plugins]]
 repo = "junegunn/fzf"
-
-# [[plugins]]
-# repo = "antoinemadec/coc-fzf"
 
 [[plugins]]
 repo = "vim-scripts/grep.vim"
@@ -92,12 +49,6 @@ repo = "Xuyuanp/nerdtree-git-plugin"
 
 [[plugins]]
 repo = "osyo-manga/vim-brightest"
-
-# [[plugins]]
-# repo = "LeafCage/yankround.vim"
-#
-# [[plugins]]
-# repo = "kien/ctrlp.vim"
 
 [[plugins]]
 repo = "cocopon/iceberg.vim"
@@ -115,59 +66,8 @@ repo = "pechorin/any-jump.vim"
 repo = "mattn/vim-goimports"
 
 [[plugins]]
-repo = "mechatroner/rainbow_csv"
-
-[[plugins]]
-repo = "jistr/vim-nerdtree-tabs"
-
-[[plugins]]
-repo = "ghifarit53/tokyonight-vim"
-
-[[plugins]]
 repo = "ConradIrwin/vim-bracketed-paste"
 
 [[plugins]]
 repo = "ryanoasis/vim-devicons"
 
-#
-# coc extensions
-#
-[[plugins]]
-repo = "neoclide/coc-lists"
-build = 'yarn install --frozen-lockfile'
-
-[[plugins]]
-repo = "neoclide/coc-json"
-build = 'yarn install --frozen-lockfile'
-
-[[plugins]]
-repo = "neoclide/coc-eslint"
-build = 'yarn install --frozen-lockfile'
-
-[[plugins]]
-repo = "neoclide/coc-html"
-build = 'yarn install --frozen-lockfile'
-
-[[plugins]]
-repo = "neoclide/coc-css"
-build = 'yarn install --frozen-lockfile'
-
-[[plugins]]
-repo = "marlonfan/coc-phpls"
-build = 'yarn install --frozen-lockfile'
-
-[[plugins]]
-repo = "neoclide/coc-yaml"
-build = 'yarn install --frozen-lockfile'
-
-[[plugins]]
-repo = "neoclide/coc-prettier"
-build = 'yarn install --frozen-lockfile'
-
-[[plugins]]
-repo = "fannheyward/coc-markdownlint"
-build = 'yarn install --frozen-lockfile'
-
-[[plugins]]
-repo = "neoclide/coc-tsserver"
-build = 'yarn install --frozen-lockfile'

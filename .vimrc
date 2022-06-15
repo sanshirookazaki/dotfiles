@@ -68,12 +68,6 @@ nnoremap <silent> <C-j> :bprev<CR>
 nnoremap <silent> <C-k> :bnext<CR>
 " map <C-[> <Plug>(go-def-pop)
 
-" vim-go
-let mapleader = "\<Space>"
-" space s,vで分割して定義ジャンプ
-au FileType go nmap <leader>s <Plug>(go-def-split)
-au FileType go nmap <leader>v <Plug>(go-def-vertical)
-
 " colorscheme
 syntax on
 " 全角スペースの背景を白に変更
@@ -81,10 +75,6 @@ autocmd Colorscheme * highlight FullWidthSpace ctermbg=white
 autocmd VimEnter * match FullWidthSpace /　/
 autocmd ColorScheme * highlight LineNr ctermfg=61 ctermbg=235
 set termguicolors
-
-" true color for tmux
-let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
 colorscheme iceberg
 " let g:airline_theme = 'codedark'
@@ -105,23 +95,13 @@ set wrapscan
 set hlsearch
 set incsearch
 set cursorline
-" terminal
 set splitbelow
-" set termwinsize=10x0
-" clipboard
 set clipboard+=unnamed
-" showtab
-" set showtabline=2
-" set list listchars=tab:▸
 
 set virtualedit=block
 set wildmenu
 " 矢印キー有効
 set nocompatible
-
-" grep
-set grepprg=hw\ --no-group\ --no-color
-autocmd QuickFixCmdPost *grep* cwindow
 
 " NERDTree
 let NERDTreeShowHidden=1
@@ -191,18 +171,6 @@ let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_guide_size = 1
 let g:indent_guides_start_level = 2
 
-" tagbar
-let g:tagbar_width = 30
-let g:tagbar_autoshowtag = 1
-
-" php-fmt
-let g:phpfmt_standard = 'PSR2'
-let g:phpfmt_autosave = 1
-
-" php_localvarcheck
-let g:php_localvarcheck_enable = 1
-let g:php_localvarcheck_global = 0
-
 " scroll
 let g:comfortable_motion_interval = 2400.0 / 60
 let g:comfortable_motion_friction = 100.0
@@ -233,45 +201,3 @@ if &term =~ "xterm"
 
     inoremap <special> <expr> <Esc>[200~ XTermPasteBegin("")
 endif
-
-" coc.nvim
-"
-"
-let g:coc_filetype_map = {
-  \ 'typescript': 'typescriptreact',
-  \ 'javascript': 'javascriptreact',
-  \ }
-" if hidden is not set, TextEdit might fail.
-set hidden
-
-" Better display for messages
-set cmdheight=4
-
-set updatetime=1000
-
-set signcolumn=yes
-
-" Remap keys for gotos
-nmap <silent> <C-]> <Plug>(coc-definition)
-nmap <silent> dy <Plug>(coc-type-definition)
-"nmap <silent> di <Plug>(coc-implementation)
-nmap <silent> dr <Plug>(coc-references)
-
-" fzf
-let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
-
-" easy motion
-map <Leader> <Plug>(easymotion-prefix)
-let g:EasyMotion_smartcase = 1
-map  <Leader>w <Plug>(easymotion-bd-w)
-nmap <Leader>w <Plug>(easymotion-overwin-w)
-
-" chrisbra/csv.vim in vim-polyglot
-let g:csv_highlight_column = 'y'
-let g:csv_hiHeader = 'Pmenu'
-
-" vim-better-whitespace
-let g:strip_whitespace_on_save = 1
-let g:strip_whitespace_confirm = 0
-let g:strip_only_modified_lines = 1
-let g:better_whitespace_guicolor = "pink"
