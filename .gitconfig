@@ -12,3 +12,5 @@
 [ghq]
   root = ~/go/src
   root = ~/.ghq
+[init]
+	defaultBranch = main
