@@ -1,3 +1,5 @@
+command_timeout = 600
+
 [gcloud]
 format = 'on [$symbol$project|$region]($style) '
 [gcloud.region_aliases]
@@ -22,3 +24,8 @@ format = "[Go $version](bold cyan) "
 [env_var.ENV]
 format = "ENV=[$env_value](bold red) "
 
+[env_var.PROJECT_ID]
+format = "PROJECT_ID=[$env_value](bold red) "
+
+[env_var.KO_DOCKER_REPO]
+format = "KO_DOCKER_REPO=[$env_value](bold yellow) "
