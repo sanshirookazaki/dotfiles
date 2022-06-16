@@ -85,9 +85,6 @@ bindkey '^X' peco-cdr
 # direnv
 eval "$(direnv hook zsh)"
 
-# zsh-syntax-highlighting
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-
 eval "$(starship init zsh)"
+
+source .zshrc.local
