@@ -1,10 +1,12 @@
 command_timeout = 600
 
+[kubernetes]
+format = '[($cluster )\($namespace\)](bold green) '
+# disabled = false
+
 [gcloud]
-format = 'on [$symbol$project|$region]($style) '
-[gcloud.region_aliases]
-us-central1 = "us-c1"
-asia-northeast1 = "asia-n1"
+format = '[$symbol$project ]($style) '
+disabled = true
 
 [php]
 format = ""
@@ -24,8 +26,9 @@ format = "[Go $version](bold cyan) "
 [env_var.ENV]
 format = "ENV=[$env_value](bold red) "
 
+[env_var.APP_ENV]
+format = "APP_ENV=[$env_value](bold red) "
+
 [env_var.PROJECT_ID]
 format = "PROJECT_ID=[$env_value](bold red) "
 
-[env_var.KO_DOCKER_REPO]
-format = "KO_DOCKER_REPO=[$env_value](bold yellow) "

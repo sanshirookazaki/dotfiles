@@ -87,4 +87,5 @@ eval "$(direnv hook zsh)"
 
 eval "$(starship init zsh)"
 
-source .zshrc.local
+source ~/.zshrc.local
+
